@@ -1,23 +1,11 @@
 import Image from 'next/image'
 import TextButton from './TextButton'
+import Logo from '@/public/assets/logo.svg'
 
 const LogoCTA = () => {
 	return (
-		<div className='flex justify-between items-center'>
-			<Image
-				src={'/assets/logo.svg'}
-				alt='Company Logo'
-				height={48}
-				width={48}
-				className='block md:hidden'
-			/>
-			<Image
-				src={'/assets/logo.svg'}
-				alt='Company Logo'
-				height={64}
-				width={64}
-				className='hidden md:block'
-			/>
+		<div className='flex flex-wrap items-center justify-between gap-4'>
+			<Image src={Logo} alt='Company Logo' className='h-12 w-auto md:h-16' />
 			<TextButton label='Free Consultation' isPrimary />
 		</div>
 	)

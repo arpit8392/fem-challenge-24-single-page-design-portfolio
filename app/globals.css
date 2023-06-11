@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 .grid-item-1 {
-	@apply bg-galacticBlue col-span-2 md:row-span-2;
+	@apply col-span-2 row-span-2 bg-galacticBlue md:row-span-2;
 }
+
+.grid-item-1 div {
+	@apply h-2/3;
+}
+
 .grid-item-2 {
 	@apply bg-summerYellow;
 }
@@ -12,11 +17,11 @@
 	@apply bg-lightPink;
 }
 .grid-item-4 {
-	@apply bg-lightRed col-span-2 lg:col-start-3;
+	@apply col-span-2 bg-lightRed lg:col-start-3;
 }
 .grid-item-5 {
-	@apply bg-cyan col-span-2;
+	@apply col-span-2 bg-cyan;
 }
 .grid-item-6 {
-	@apply bg-magenta col-span-2;
+	@apply col-span-2 bg-magenta;
 }

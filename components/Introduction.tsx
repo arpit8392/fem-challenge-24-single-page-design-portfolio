@@ -13,7 +13,7 @@ const Introduction = () => {
 					your one-stop shop for your design needs.
 				</p>
 			</div>
-			<ul className='grid min-w-fit grid-flow-row-dense grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6'>
+			<ul className='grid min-w-fit grid-flow-row-dense grid-cols-2 grid-rows-6 gap-6 md:grid-cols-4 md:grid-rows-3 lg:grid-cols-6 lg:grid-rows-2'>
 				{coversData.map((item) => (
 					<Cover key={item.id} {...item} />
 				))}
