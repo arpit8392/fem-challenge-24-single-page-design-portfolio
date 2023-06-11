@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Cover = ({ id, title, image, width, height }: Cover) => {
+const Cover = ({ id, title, image }: Cover) => {
 	return (
 		<li
 			className={`grid-item-${id} flex min-h-[182px] flex-col justify-between rounded-lg p-6`}>
