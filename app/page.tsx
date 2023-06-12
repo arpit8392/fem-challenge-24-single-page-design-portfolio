@@ -1,13 +1,14 @@
 import AboutMe from '@/components/AboutMe'
 import CTA from '@/components/CTA'
 import Introduction from '@/components/Introduction'
+import MyWork from '@/components/MyWork'
 
 export default function Home() {
 	return (
-		<main className='flex min-h-screen flex-col gap-28'>
+		<main className='flex min-h-screen flex-col gap-28 overflow-hidden'>
 			<Introduction />
 			<AboutMe />
-			{/* Section - My Work */}
+			<MyWork />
 			<CTA />
 		</main>
 	)
