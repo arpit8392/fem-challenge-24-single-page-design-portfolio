@@ -34,9 +34,9 @@ const Slider = ({ images }: Props) => {
 					className='relative h-[180px] w-[270px] md:h-[360px] md:w-[540px]'>
 					<Image
 						src={`/assets/${images[index]}`}
-						alt={images[index]}
+						alt={`Image ${index + 1}`}
 						fill
-						className={`scroll-smooth rounded-lg duration-200 ease-in hover:cursor-pointer ${
+						className={`scroll-smooth rounded-lg object-contain object-center duration-200 ease-in ${
 							i === 0 ? 'scale-105' : 'scale-100'
 						}`}
 					/>
@@ -47,7 +47,7 @@ const Slider = ({ images }: Props) => {
 	}
 
 	return (
-		<div className='flex flex-col items-center gap-8'>
+		<div className='flex flex-col items-center gap-10'>
 			<ul className='flex items-center gap-4 md:gap-8'>{getSlides()}</ul>
 			<div className='flex gap-4'>
 				<button
@@ -64,4 +64,5 @@ const Slider = ({ images }: Props) => {
 		</div>
 	)
 }
+
 export default Slider
