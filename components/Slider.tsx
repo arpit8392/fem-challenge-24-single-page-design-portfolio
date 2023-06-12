@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Slider = ({ images }: Props) => {
-	const [currentIndex, setCurrentIndex] = useState(0)
+	const [currentIndex, setCurrentIndex] = useState(2)
 
 	const previous = () => {
 		const isFirstSlide = currentIndex === 0
